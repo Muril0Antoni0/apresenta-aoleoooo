@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Admin - Tech Week</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='admin.css'>
+</head>
+<body class="admin-page">
+    <div id='tsparticles-admin'></div>
+    <header class='topbar'>
+        <div class='brand'>ADMIN TECHWEEK.</div>
+    </header>
+
+    <main class='conteudo'>
+        <div class='container'>
+            <h1 class="admin-title">Painel de Análise</h1>
+            <h2 class="admin-subtitle">Visão geral de inscrições e evento</h2>
+            <div id="login-form">
+                <h2>Login</h2>
+                <input type="password" id="admin-password" placeholder="Senha">
+                <button id="login-btn">Entrar</button>
+            </div>
+            <div id="admin-panel" style="display: none;">
+                <div class="admin-header">
+                    <div>
+                        <h2>Resumo do Evento</h2>
+                        <p>Dados fictícios para demonstração de inscritos, palestrantes e projetos.</p>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">Inscritos</span>
+                        <span class="stat-value" id="stat-participantes-count">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Palestrantes</span>
+                        <span class="stat-value" id="stat-palestrantes-count">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Projetos</span>
+                        <span class="stat-value" id="stat-projetos-count">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Presenças</span>
+                        <span class="stat-value" id="stat-presencas-count">0</span>
+                    </div>
+                </div>
+                <div class="admin-panel-grid">
+                    <section class="card">
+                        <header>
+                            <h3>Inscrições</h3>
+                        </header>
+                        <div id="participantes-list"></div>
+                    </section>
+                    <section class="card">
+                        <header>
+                            <h3>Palestrantes</h3>
+                        </header>
+                        <div id="palestrantes-list"></div>
+                    </section>
+                    <section class="card">
+                        <header>
+                            <h3>Projetos</h3>
+                        </header>
+                        <div id="projetos-list"></div>
+                    </section>
+                    <section class="card">
+                        <header>
+                            <h3>Presenças</h3>
+                        </header>
+                        <div id="presencas-list"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src='https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js'></script>
+    <script src='js/admin.js'></script>
+</body>
+</html>
